@@ -8,7 +8,7 @@
     "Task": ["Classification"],
     "Input": ["Compound"],
     "Input Shape": "Single",
-    "Output": ["Probability"],
+    "Output": ["Score"],
     "Output Type": ["Float"],
     "Output Shape": "Single",
     "Interpretation": "Probability that a compound inhibits bacterial pathogens with a focus on ESKAPE. Scores range from 0 to 1. With 1 indicating the highest probability for growth inhibitory activity.",

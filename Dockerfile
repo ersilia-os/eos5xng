@@ -1,7 +1,7 @@
 FROM bentoml/model-server:0.11.0-py37
 MAINTAINER ersilia
 
-RUN pip install git+https://github.com/bp-kelley/descriptastorus
+RUN pip install pip git+https://github.com/bp-kelley/descriptastorus
 RUN pip install tqdm>=4.62.2
 RUN pip install typed-argument-parser==1.6.1
 RUN pip install scikit-learn

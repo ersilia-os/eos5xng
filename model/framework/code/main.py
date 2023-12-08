@@ -2,19 +2,33 @@
 import os
 import csv
 import sys
-from rdkit import Chem
-from rdkit.Chem.Descriptors import MolWt
 
+import chemprop
 # parse arguments
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
+
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
+dir_model= os.path.abspath(os.path.join(root,"..", "..","checkpoints", "classification-scaffold"))
+
 
 # my model
 def my_model(smiles_list):
-    return [MolWt(Chem.MolFromSmiles(smi)) for smi in smiles_list]
+    
+    smiles_list_list= [[smiles] for smiles in smiles_list]  
+    arguments = [
+    '--test_path', '/dev/null',
+    '--preds_path', '/dev/null',
+    '--checkpoint_dir', dir_model,
+    '--features_generator', 'rdkit_2d_normalized',
+    '--no_features_scaling'
+    ]
+
+    args = chemprop.args.PredictArgs().parse_args(arguments)
+    preds = chemprop.train.make_predictions(args=args, smiles=smiles_list_list)
+    return preds
 
 
 # read SMILES from .csv file, assuming one column with header
@@ -34,6 +48,6 @@ assert input_len == output_len
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["value"])  # header
+    writer.writerow(["Probability_score"])  # header
     for o in outputs:
-        writer.writerow([o])
+        writer.writerow(o)

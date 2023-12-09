@@ -12,7 +12,6 @@ RUN pip install pandas-flavor==0.2.0
 RUN pip install pandas>=0.24.0
 RUN pip install scipy>=1.7.0
 RUN pip install rdkit>=2022.3.3
-RUN conda install gibrat
 
 WORKDIR /repo
 COPY . /repo

@@ -17,7 +17,7 @@ def run_chemprop_prediction():
     predict_args.checkpoint_dir = checkpoint_dir
 
     # Run chemprop prediction with the specified arguments
-    chemprop_predict(args=predict_args)
+    chemprop_predict(checkpoint_dir=predict_args.checkpoint_dir)
 
 if __name__ == '__main__':
     print("Now predicting")

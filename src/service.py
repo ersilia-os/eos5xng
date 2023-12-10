@@ -18,13 +18,34 @@ FRAMEWORK_BASEDIR = "framework"
 MODEL_NAME = "model"
 
 
-def load_chemprop_model(framework_dir, checkpoints_dir):
+def load_model(framework_dir, checkpoints_dir):
     mdl = ChempropModel()
     mdl.load(framework_dir, checkpoints_dir)
     return mdl
 
+def Float(x):
+    try:
+        return float(x)
+    except:
+        return None
 
-class ChempropModel(object):
+
+def String(x):
+    x = str(x)
+    if not x:
+        return None
+    if x == "nan":
+        return None
+    if x == "null":
+        return None
+    if x == "False":
+        return None
+    if x == "None":
+        return None
+    return x
+    
+
+class Model(object):
     def __init__(self):
         self.DATA_FILE = "_data.csv"
         #self.FEAT_FILE = "features.npz"

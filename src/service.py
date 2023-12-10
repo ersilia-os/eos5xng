@@ -152,5 +152,5 @@ class Service(BentoService):
         input = input[0]
         input_list = [inp["input"] for inp in input]
         output = self.artifacts.model.run(input_list)
-        print('Returning output: ', output}
+        print('Returning output: ', output)
         return [output]

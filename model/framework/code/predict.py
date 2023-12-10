@@ -9,19 +9,17 @@ features_file =  os.path.abspath(os.path.join(root, "..","features.npz"))
 checkpoint_dir = os.path.abspath(os.path.join(root,"..", "..","checkpoints", "model6"))
 #features_file = sys.argv[-1]
 
-# def run_chemprop_prediction():
-#     # Setting the path to my checkpoint directory
-#     checkpoint_dir = os.path.abspath(os.path.join(root,"..", "..","checkpoints", "model6"))
+# arguments = [
+#     '--test_path', 'test_checkpoints_transfer/fold_0/test_smiles.csv',
+#     '--preds_path', 'test_preds_transfer.csv',
+#     '--checkpoint_dir', 'test_checkpoints_transfer',
+# ]
 
-#     # Create PredictArgs to configure prediction arguments
-#     predict_args = PredictArgs()
-#     predict_args.checkpoint_dir = checkpoint_dir
-
-#     # Run chemprop prediction with the specified arguments
-#     chemprop_predict(checkpoint_dir=predict_args.checkpoint_dir)
+# args = chemprop.args.PredictArgs().parse_args(arguments)
+# preds = chemprop.train.make_predictions(args=args)
 
 if __name__ == '__main__':
     print("Now predicting")
-    chemprop_predict()
+    chemprop_predict(checkpoint_dir, features_file)
     print("Done predicting")
     os.remove(features_file)

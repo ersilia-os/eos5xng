@@ -1,6 +1,7 @@
 """Loads a trained chemprop model checkpoint and makes predictions on a dataset."""
 import os, sys
-from chemprop.train import chemprop_predict
+import chemprop.train
+#from chemprop.train import chemprop_predict
 from chemprop.args import PredictArgs
 
 #intermediate features file created
@@ -20,6 +21,6 @@ checkpoint_dir = os.path.abspath(os.path.join(root,"..", "..","checkpoints", "mo
 
 if __name__ == '__main__':
     print("Now predicting")
-    chemprop_predict(checkpoint_dir, features_file)
+    chemprop.train.make_predictions(checkpoint_dir, features_file)
     print("Done predicting")
     os.remove(features_file)

@@ -1,7 +1,7 @@
 {
     "Identifier": "eos5xng",
     "Slug": "chemprop-eskape",
-    "Status": "In progress",
+    "Status": "Ready",
     "Title": "ESKAPE pathogen inhibition",
     "Description": "Prediction of antimicrobial potential using a dataset of 29537 compounds screened against the antibiotic resistant pathogen Burkholderia cenocepacia. The model uses the Chemprop Direct Message Passing Neural Network (D-MPNN) abd has an AUC score of 0.823 for the test set. It has been used to virtually screen the FDA approved drugs as well as a collection of natural product list (>200k compounds) with hit rates of 26% and 12% respectively.",
     "Mode": "Pretrained",

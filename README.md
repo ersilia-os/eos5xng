@@ -21,7 +21,7 @@ Prediction of antimicrobial potential using a dataset of 29537 compounds screene
 
 * [Publication](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9624395/)
 * [Source Code](https://github.com/cardonalab/Prediction-of-ATB-Activity)
-* Ersilia contributor: [GemmaTuron](https://github.com/GemmaTuron)
+* Ersilia contributor: [Richioo](https://github.com/Richioo)
 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos5xng)

@@ -1,11 +1,11 @@
-# ESKAPE pathogen inhibition
+# Burkholderia cenocepacia inhibition
 
 Prediction of antimicrobial potential using a dataset of 29537 compounds screened against the antibiotic resistant pathogen Burkholderia cenocepacia. The model uses the Chemprop Direct Message Passing Neural Network (D-MPNN) abd has an AUC score of 0.823 for the test set. It has been used to virtually screen the FDA approved drugs as well as a collection of natural product list (>200k compounds) with hit rates of 26% and 12% respectively.
 
 ## Identifiers
 
 * EOS model ID: `eos5xng`
-* Slug: `chemprop-eskape`
+* Slug: `chemprop-burkholderia`
 
 ## Characteristics
 
@@ -15,18 +15,18 @@ Prediction of antimicrobial potential using a dataset of 29537 compounds screene
 * Output: `Score`
 * Output Type: `Float`
 * Output Shape: `Single`
-* Interpretation: Probability that a compound inhibits bacterial pathogens with a focus on ESKAPE. Scores range from 0 to 1. With 1 indicating the highest probability for growth inhibitory activity.
+* Interpretation: Probability that a compound inhibits the drug resistant bacteria Burkholderia cenocepacia. Scores range from 0 to 1. With 1 indicating the highest probability for growth inhibitory activity.
 
 ## References
 
 * [Publication](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9624395/)
 * [Source Code](https://github.com/cardonalab/Prediction-of-ATB-Activity)
-* Ersilia contributor: [Richiio](https://github.com/Richiio)
+* Ersilia contributor: [Richioo](https://github.com/Richioo)
 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos5xng)
 * [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5xng.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos5xng) (AMD64, ARM64)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos5xng) (AMD64)
 
 ## Citation
 

@@ -46,6 +46,6 @@ with open(temp_ouput, "r") as f:
 # write output in a .csv file (outputfile)
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["value"])  # header
+    writer.writerow(["bcenocepacia_inhibition"])  # header
     for o in outputs:
         writer.writerow([o])

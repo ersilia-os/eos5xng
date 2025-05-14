@@ -3,32 +3,43 @@
     "Slug": "chemprop-burkholderia",
     "Status": "Ready",
     "Title": "Burkholderia cenocepacia inhibition",
-    "Description": "Prediction of antimicrobial potential using a dataset of 29537 compounds screened against the antibiotic resistant pathogen Burkholderia cenocepacia. The model uses the Chemprop Direct Message Passing Neural Network (D-MPNN) abd has an AUC score of 0.823 for the test set. It has been used to virtually screen the FDA approved drugs as well as a collection of natural product list (>200k compounds) with hit rates of 26% and 12% respectively.",
-    "Mode": "Pretrained",
-    "Task": [
-        "Classification"
-    ],
+    "Description": "Prediction of antimicrobial potential using a dataset of 29537 compounds screened against the antibiotic resistant pathogen Burkholderia cenocepacia. The model uses the Chemprop Direct Message Passing Neural Network (D-MPNN) abd has an AUC score of 0.823 for the test set. It has been used to virtually screen the FDA approved drugs as well as a collection of natural product list (>200k compounds) with hit rates of 26% and 12% respectively.\n",
+    "Source": "Local",
+    "Source Type": "External",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
+    "Input Dimension": 1,
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
+    "Biomedical Area": [
+        "Antimicrobial resistance"
+    ],
+    "Target Organism": [
+        "Burkholderia cenocepacia"
+    ],
     "Output": [
         "Score"
     ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "Single",
+    "Output Dimension": 1,
+    "Output Consistency": "Fixed",
     "Interpretation": "Probability that a compound inhibits the drug resistant bacteria Burkholderia cenocepacia. Scores range from 0 to 1. With 1 indicating the highest probability for growth inhibitory activity.",
     "Tag": [
         "Antimicrobial activity"
     ],
     "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9624395/",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2022,
     "Source Code": "https://github.com/cardonalab/Prediction-of-ATB-Activity",
-    "License": "GPL-3.0",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5xng.zip",
+    "License": "GPL-3.0-only",
+    "Contributor": "Richioo",
+    "Incorporation Date": "2023-12-03",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos5xng",
     "Docker Architecture": [
         "AMD64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5xng.zip",
+    "Deployment": [
+        "Local"
     ]
 }

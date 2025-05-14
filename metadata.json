@@ -40,8 +40,15 @@
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5xng.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos5xng",
     "Docker Architecture": [
-        "AMD64"
+        "AMD64",
+        "ARM64"
     ],
     "Model Size": 215.0,
-    "Environment Size": 5839.0
+    "Environment Size": 5839.0,
+    "Image Size": 6346.17,
+    "Computational Performance 1": 59.57,
+    "Computational Performance 2": 52.33,
+    "Computational Performance 3": 77.36,
+    "Computational Performance 4": 629.13,
+    "Computational Performance 5": -1.0
 }

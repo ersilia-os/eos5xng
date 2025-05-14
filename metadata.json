@@ -3,21 +3,18 @@
     "Slug": "chemprop-burkholderia",
     "Status": "Ready",
     "Title": "Burkholderia cenocepacia inhibition",
-    "Description": "Prediction of antimicrobial potential using a dataset of 29537 compounds screened against the antibiotic resistant pathogen Burkholderia cenocepacia. The model uses the Chemprop Direct Message Passing Neural Network (D-MPNN) abd has an AUC score of 0.823 for the test set. It has been used to virtually screen the FDA approved drugs as well as a collection of natural product list (>200k compounds) with hit rates of 26% and 12% respectively.\n",
+    "Description": "Prediction of antimicrobial potential using a dataset of 29537 compounds screened against the antibiotic resistant pathogen Burkholderia cenocepacia. The model uses the Chemprop Direct Message Passing Neural Network (D-MPNN) abd has an AUC score of 0.823 for the test set. It has been used to virtually screen the FDA approved drugs as well as a collection of natural product list (>200k compounds) with hit rates of 26% and 12% respectively.",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "External",
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Annotation",
-    "Subtask": "Activity prediction",
-    "Biomedical Area": [
-        "Antimicrobial resistance"
-    ],
-    "Target Organism": [
-        "Burkholderia cenocepacia"
-    ],
     "Output": [
         "Score"
     ],
@@ -27,19 +24,24 @@
     "Tag": [
         "Antimicrobial activity"
     ],
-    "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9624395/",
+    "Biomedical Area": [
+        "Antimicrobial resistance"
+    ],
+    "Target Organism": [
+        "Burkholderia cenocepacia"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2022,
+    "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9624395/",
     "Source Code": "https://github.com/cardonalab/Prediction-of-ATB-Activity",
     "License": "GPL-3.0-only",
     "Contributor": "Richioo",
     "Incorporation Date": "2023-12-03",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5xng.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos5xng",
     "Docker Architecture": [
         "AMD64"
     ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5xng.zip",
-    "Deployment": [
-        "Local"
-    ]
+    "Model Size": 215.0,
+    "Environment Size": 5839.0
 }

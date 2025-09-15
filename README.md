@@ -2,8 +2,7 @@
 
 Prediction of antimicrobial potential using a dataset of 29537 compounds screened against the antibiotic resistant pathogen Burkholderia cenocepacia. The model uses the Chemprop Direct Message Passing Neural Network (D-MPNN) abd has an AUC score of 0.823 for the test set. It has been used to virtually screen the FDA approved drugs as well as a collection of natural product list (>200k compounds) with hit rates of 26% and 12% respectively.
 
-This model was incorporated on 2023-12-03.
-
+This model was incorporated on 2023-12-03.Last packaged on 2025-09-15.
 
 ## Information
 ### Identifiers
@@ -42,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `215`
 - **Environment Size (Mb):** `5852`
-- **Image Size (Mb):** `6346.17`
+- **Image Size (Mb):** `6363.26`
 
 **Computational Performance (seconds):**
-- 10 inputs: `59.57`
-- 100 inputs: `77.36`
-- 10000 inputs: `-1`
+- 10 inputs: `36.52`
+- 100 inputs: `36.04`
+- 10000 inputs: `981.03`
 
 ### References
 - **Source Code**: [https://github.com/cardonalab/Prediction-of-ATB-Activity](https://github.com/cardonalab/Prediction-of-ATB-Activity)

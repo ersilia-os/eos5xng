@@ -50,7 +50,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/cardonalab/Prediction-of-ATB-Activity](https://github.com/cardonalab/Prediction-of-ATB-Activity)
-- **Publication**: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9624395/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9624395/)
+- **Publication**: [https://doi.org/10.1371/journal.pcbi.1010613](https://doi.org/10.1371/journal.pcbi.1010613)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2022`
 - **Ersilia Contributor:** [Richioo](https://github.com/Richioo)

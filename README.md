@@ -1,6 +1,6 @@
 # Burkholderia cenocepacia inhibition
 
-Prediction of antimicrobial potential using a dataset of 29537 compounds screened against the antibiotic resistant pathogen Burkholderia cenocepacia. The model uses the Chemprop Direct Message Passing Neural Network (D-MPNN) abd has an AUC score of 0.823 for the test set. It has been used to virtually screen the FDA approved drugs as well as a collection of natural product list (>200k compounds) with hit rates of 26% and 12% respectively.
+Flags inhibitors of Burkholderia cenocepacia, an opportunistic Gram-negative pathogen dangerous to people with cystic fibrosis and notoriously resistant to most antibiotics. Rahman and colleagues screened a large compound collection against the organism and trained a classifier on the results, then showed prospectively that model-guided selection raised the hit rate substantially above random screening. That enrichment result, rather than retrospective accuracy, is the strongest evidence the model works.
 
 This model was incorporated on 2023-12-03.Last packaged on 2025-09-15.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-12-03.Last packaged on 2025-09-15.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability that a compound inhibits the drug resistant bacteria Burkholderia cenocepacia. Scores range from 0 to 1. With 1 indicating the highest probability for growth inhibitory activity.
+- **Interpretation:** Probability of Burkholderia cenocepacia growth inhibition, ranging from 0 to 1.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |

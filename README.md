@@ -1,6 +1,6 @@
 # Burkholderia cenocepacia inhibition
 
-Flags inhibitors of Burkholderia cenocepacia, an opportunistic Gram-negative pathogen dangerous to people with cystic fibrosis and notoriously resistant to most antibiotics. Rahman and colleagues screened a large compound collection against the organism and trained a classifier on the results, then showed prospectively that model-guided selection raised the hit rate substantially above random screening. That enrichment result, rather than retrospective accuracy, is the strongest evidence the model works.
+Flags growth inhibitors of Burkholderia cenocepacia, an intrinsically antibiotic-resistant opportunistic pathogen that is dangerous to people with cystic fibrosis. Rahman and colleagues at the University of Manitoba screened 29,537 compounds against strain K56-2, binarised the results at a 0.87% hit rate and trained a Chemprop directed message-passing neural network with RDKit descriptors, reaching a test ROC-AUC of 0.823. Testing the top-ranked predictions experimentally gave hit rates of 26% among FDA-approved drugs and 12% among a natural product library.
 
 This model was incorporated on 2023-12-03.Last packaged on 2025-09-15.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-12-03.Last packaged on 2025-09-15.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of Burkholderia cenocepacia growth inhibition, ranging from 0 to 1.
+- **Interpretation:** Probability that a compound inhibits Burkholderia cenocepacia K56-2 growth, with training labels from a B-score cut-off of -17.5.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |

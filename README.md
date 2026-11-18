@@ -2,7 +2,8 @@
 
 Flags growth inhibitors of Burkholderia cenocepacia, an intrinsically antibiotic-resistant opportunistic pathogen that is dangerous to people with cystic fibrosis. Rahman and colleagues at the University of Manitoba screened 29,537 compounds against strain K56-2, binarised the results at a 0.87% hit rate and trained a Chemprop directed message-passing neural network with RDKit descriptors, reaching a test ROC-AUC of 0.823. Testing the top-ranked predictions experimentally gave hit rates of 26% among FDA-approved drugs and 12% among a natural product library.
 
-This model was incorporated on 2023-12-03.Last packaged on 2025-09-15.
+This model was incorporated on 2023-12-03.
+Last packaged on 2025-09-15.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos5xng](https://hub.docker.com/r/ersiliaos/eos5xng)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5xng.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5xng.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos5xng_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos5xng_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `215`
